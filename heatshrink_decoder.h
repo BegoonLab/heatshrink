@@ -82,7 +82,7 @@ void heatshrink_decoder_free(heatshrink_decoder *hsd);
 /* Reset a decoder. */
 void heatshrink_decoder_reset(heatshrink_decoder *hsd);
 
-/* Sink at most SIZE bytes from IN_BUF into the decoder. *INPUT_SIZE is set to
+/* Sink at most SIZE bytes from IN_BUF into the decoder. *MAX_MESSAGE_SIZE is set to
  * indicate how many bytes were actually sunk (in case a buffer was filled). */
 HSD_sink_res heatshrink_decoder_sink(heatshrink_decoder *hsd,
     uint8_t *in_buf, size_t size, size_t *input_size);

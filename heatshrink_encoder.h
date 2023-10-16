@@ -91,7 +91,7 @@ void heatshrink_encoder_free(heatshrink_encoder *hse);
 void heatshrink_encoder_reset(heatshrink_encoder *hse);
 
 /* Sink up to SIZE bytes from IN_BUF into the encoder.
- * INPUT_SIZE is set to the number of bytes actually sunk (in case a
+ * MAX_MESSAGE_SIZE is set to the number of bytes actually sunk (in case a
  * buffer was filled.). */
 HSE_sink_res heatshrink_encoder_sink(heatshrink_encoder *hse,
     uint8_t *in_buf, size_t size, size_t *input_size);
